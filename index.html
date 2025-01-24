@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icons/favicon.svg" type="image/x-icon">
+    <title>Zoki</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <a href="#" class="menu_item">Главная</a>
+            <a href="#about" class="menu_item">О нас</a>
+            <a href="#we" class="menu_item">Услуги</a>
+            <a href="#contacts" class="menu_item">Контакты</a>
+            <a href="#address" class="menu_item">Адрес</a>
+        </div>
+        <input type="search" class="search">
+        <button class="burger hidden" id="burger">
+            <img src="icons/burger.svg" alt="">
+        </button>
+        <div class="menuBurger" id="menuBurger">
+            <a href="#" class="menuBurger_item">Главная</a>
+            <a href="#about" class="menuBurger_item">О нас</a>
+            <a href="#we" class="menuBurger_item">Услуги</a>
+            <a href="#contacts" class="menuBurger_item">Контакты</a>
+            <a href="#address" class="menuBurger_item">Адрес</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__primaryScreen primaryScreen">
+            <img src="img/logo.png" alt="" class="primaryScreen_logo">
+            <img src="img/каплиБелые.svg" alt="" class="primaryScreen_drops">
+        </div>
+        <div class="main__about about" id="about">
+            <div class="about_container">
+                <div class="about_title">О нас</div>
+                <ul class="about_list list">
+                    <li class="list_items">Мы предлагаем вам возможность сблизиться с кошками, что может увлечь и успокоить вас, особенно если вы страдает от стресса или одиночества</li>
+                    <li class="list_items">У нас вы можете попробовать уникальные напитки и  закуски</li>
+                    <li class="list_items">Все кошки в заведении часто проходят обследования и имеют необходимую вакцинацию, что гарантирует их здоровье и вашу безопасность</li>
+                    <li class="list_items">Мы проводим мастер-классы, лекции по уходу за кошками</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main__come come">
+            <div class="come_container">
+                <div class="come_title">Приходи, если</div>
+                <div class="come_term">Ты  обожаешь животных и хочешь пообщаться с кошками в уютной обстановке.</div>
+                <div class="come_term">Переживаешь стресс: Посещение котокафе может помочь снизить уровень стресса и улучшить настроение.</div>
+                <div class="come_term">Вы хотите отдохнуть с семьей, ваши дети узнают больше о кошках и заботе о домашних животных.</div>
+                <div class="come_term">Все хотите отдохнуть: Котокафе идеально подходит для  расслабления, чтения книги или работы за чашкой чая или кофе в приятной атмосфере с пушистыми компаньонами.</div>
+            </div>
+            <img src="img/каплиРозовые.png" alt="" class="come_drops">
+        </div>
+        <div class="main__cats cats" id="cats">
+            <div class="cats_title">Тебя ждут:</div>
+            <div class="cat_container">
+                <div class="cat">
+                    <img src="img/c1.png" alt="" class="cat_img">
+                    <div class="cat_info">Тим, 8 месяцев</div>
+                </div>
+                <div class="cat">
+                    <img src="img/c2.png" alt="" class="cat_img">
+                    <div class="cat_info">Джем, 1 год</div>
+                </div>
+                <div class="cat">
+                    <img src="img/c3.png" alt="" class="cat_img">
+                    <div class="cat_info">Бусик, 6 месяцев</div>
+                </div>
+            </div>
+
+
+            <button class="success_button" id="showAllCats">Показать еще</button>
+
+
+            <div class="cat_container hidden" id="hiddenCats">
+                <div class="cat">
+                    <img src="img/c4.png" alt="" class="cat_img">
+                    <div class="cat_info">Луна, 1 год</div>
+                </div>
+                <div class="cat">
+                    <img src="img/c5.png" alt="" class="cat_img">
+                    <div class="cat_info">Жан, 2 года</div>
+                </div>
+                <div class="cat">
+                    <img src="img/c6.png" alt="" class="cat_img">
+                    <div class="cat_info">Мышь, 3 года</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main__sliderCat sliderCat hidden">
+            <div class="cats_title">Тебя ждут:</div>
+            <div class="sliderCat_container">
+                <button class="left" onclick="changeSlideCat(-1)">
+                    <img src="icons/leftCat.svg" alt="">
+                </button>
+                <div class="slidesCat">
+                    <img class ="slide" src="img/c1.png" alt="cat1">
+                    <img class ="slide" src="img/c2.png" alt="cat2">
+                    <img class ="slide" src="img/c3.png" alt="cat3">
+                    <img class ="slide" src="img/c4.png" alt="cat4">
+                    <img class ="slide" src="img/c5.png" alt="cat5">
+                    <img class ="slide" src="img/c6.png" alt="cat6">
+                </div>
+                <button class="right" onclick="changeSlideCat(1)">
+                    <img src="icons/rightCat.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="main__we we" id="we">
+            <div class="we_title">Мы:</div>
+            <div class="we_group">
+                <div class="weGroup">
+                    <div class="weGroup_title">Помогаем найти новый дом</div>
+                    <img src="icons/home.svg" alt="" class="weGroup_img">
+                    <button class="weGroup_button">Узнать подробнее</button>
+                </div>
+                <div class="weGroup">
+                    <div class="weGroup_title">Нарисуем вашего котика</div>
+                    <img src="icons/penCat.svg" alt="" class="weGroup_img">
+                    <button class="weGroup_button">Узнать подробнее</button>
+                </div>
+                <div class="weGroup">
+                    <div class="weGroup_title">Проводим семинары для того, чтобы ты узнал побольше о своем питомце</div>
+                    <img src="icons/notebook.svg" alt="" class="weGroup_img">
+                    <button class="weGroup_button">Узнать подробнее</button>
+                </div>
+            </div>
+        </div>
+        <div class="main__slider slider">
+            <div class="slider_container">
+                <button class="prev" onclick="changeSlide(-1)">
+                    <img src="icons/left.svg" alt="">
+                </button>
+                <div class="slides">
+                    <img class ="slide" src="img/cafe1.jpeg" alt="cafe1">
+                    <img class ="slide" src="img/cafe2.jpeg" alt="cafe2">
+                    <img class ="slide" src="img/cafe3.jpeg" alt="cafe3">
+                </div>
+                <button class="next" onclick="changeSlide(1)">
+                    <img src="icons/right.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <img src="img/cat.png" alt="" class="footer_img">
+        <div class="footer_container">
+            <div class="info">
+                <div class="info_title">О нас</div>
+                <a href="#" class="info_text">Правила посещения</a>
+                <a href="#cats" class="info_text">Наши питомцы</a>
+            </div>
+            <div class="info">
+                <div class="info_title">Услуги и цены</div>
+                <a href="#" class="info_text">Стоимость посещения</a>
+                <a href="#" class="info_text">Скидки</a>
+            </div>
+            <div class="info_soc" id="contacts">
+                <div class="info_title">Мы в сети</div>
+                <a href="tel:+7 (8362) 35-35-10" class="info_social"><img src="icons/tg.svg" alt="" class="info_social_img"></a>
+                <a href="https://vk.com/zoki_ola?ysclid=m5o0ncfvs8291713481" class="info_social"><img src="icons/vk.svg" alt="" class="info_social_img"></a>
+                <a href="tel:+7 (8362) 35-35-10" class="info_social"><img src="icons/tel.svg" alt="" class="info_social_img"></a>
+                <a href="tel:+7 (8362) 35-35-10" class="info_social"><img src="icons/whatsapp.svg" alt="" class="info_social_img"></a>
+            </div>
+            <div class="info" id="address">
+                <div class="info_title">Адрес</div>
+                <a href="#" class="info_text">ул. Первомайская, 114, Йошкар-Ола</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

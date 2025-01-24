@@ -1,0 +1,2496 @@
+*
+    margin: 0
+    padding: 0
+    border: 0
+    box-sizing: border-box
+    text-decoration: none
+    // color: #fff
+
+
+$text: #F7AAFF
+$accentText: #7E148B
+$button: #FFFFFF
+$accentButton: #E840FC
+$textOnButton: #FFFFFF
+$accentTextOnButton: #ED3DFF
+
+
+@font-face 
+    font-family: borsok
+    src: url(../fonts/borsok.otf)
+
+@font-face 
+    font-family: monR
+    src: url(../fonts/Montserrat-Regular.ttf)
+@font-face 
+    font-family: monSB
+    src: url(../fonts/Montserrat-SemiBold.ttf)
+
+
+.header
+    background-color: $button
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 60px
+    height: 93px
+    border-bottom: 1px solid $accentButton
+
+.main
+    background-color: $text
+    &__cats
+        background-color: $button
+        padding-top: 350px
+    &__we
+        background-color: $button
+        // margin-bottom: 100px
+    &__slider
+        padding-top: 100px
+        background-color: $button
+        margin-bottom: 100px
+
+.menu
+    display: flex
+    gap: 60px
+    &_item
+        font-family: borsok
+        font-size: 24px
+        color: $text
+
+.menuBurger
+    display: none
+
+.search
+    display: flex
+    align-items: center
+    border-radius: 100px
+    width: 236px
+    height: 34px
+    background-color: $text
+    padding-left: 35px
+    border: 1px solid $accentButton
+    background-image: url(../icons/search.svg)
+    background-position: 10px 7px
+    background-repeat: no-repeat
+    font-family: monSB
+
+.primaryScreen
+    background-color: $button
+    display: flex
+    height: 440px
+    flex-direction: column
+    align-items: center
+    background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+    background-repeat: no-repeat
+    background-size: 460px, 380px, 953px
+    background-position: -200px 55px, 285px -153px, 988px -350px
+    &_logo
+        padding-top: 100px
+    &_drops
+        width: 100%
+        position: relative
+        bottom: -90px
+
+.about
+    height: 1000px
+    background-color: $text
+    &_container
+        padding-left: 150px
+        padding-right: 40px
+    &_title
+        padding-top: 350px
+        font-family: borsok
+        font-size: 113px
+        color: $textOnButton
+        margin-bottom: 60px
+
+.list
+    display: flex
+    flex-direction: column
+    gap: 30px
+    // max-width: 1150px
+    &_items
+        height: 60px
+        display: block
+        background: url(../icons/miniCat.svg) 0px -8px no-repeat
+        background-size: 60px 60px
+        padding-left: 55px
+        font-family: monSB
+        font-size: 24px
+        color: $accentText
+
+.come
+    display: flex
+    flex-direction: column
+    &_container
+        width: 90%
+        margin: 0 auto
+        border-radius: 40px
+        background-color: $button
+        text-align: center
+        padding-bottom: 40px
+    &_title
+        padding-top: 40px
+        font-family: borsok
+        font-size: 113px
+        color: $text
+        margin-bottom: 30px
+    &_term
+        width: 95%
+        font-family: monR
+        font-size: 24px
+        color: $accentText
+        padding-top: 30px
+        padding-bottom: 30px
+        padding-left: 147px
+        padding-right: 147px
+        border: 1px solid $text
+        border-radius: 40px
+        margin: 0 auto
+        margin-bottom: 10px
+    &_drops
+        position: relative
+        bottom: -280px
+        width: 100%
+
+.cats
+    display: flex
+    flex-direction: column
+    align-items: center
+    &_title
+        font-family: borsok
+        font-size: 113px
+        color: $text
+        margin-bottom: 10px
+
+.cat
+    margin-bottom: 30px
+    &_container
+        display: flex
+        gap: 20px
+    &_img
+        border-radius: 40px
+        margin-bottom: 10px
+    &_info
+        font-family: borsok
+        font-size: 34px
+        color: $text
+
+.success_button
+    font-family: borsok
+    font-size: 32px
+    color: $textOnButton
+    background-color: $accentButton
+    width: 400px
+    height: 82px
+    border-radius: 30px
+    box-shadow: 0px 19px 19px -2px rgba(232, 64, 252, 0.19)
+    transition: .3s
+    margin-bottom: 100px
+
+.hidden
+    display: none
+
+.we
+    &_title
+        font-family: borsok
+        font-size: 113px
+        color: $text
+        padding-left: 190px
+        margin-bottom: 30px
+    &_group
+        display: flex
+        justify-content: center
+        gap: 20px
+
+.weGroup
+    width: 336px
+    height: 450px
+    background-color: $text
+    border-radius: 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    &_title
+        padding-top: 40px
+        font-family: monSB
+        font-size: 23px
+        color: $accentText
+        margin-bottom: 40px
+        width: 80%
+        height: 110px
+    &_img
+        height: 175px
+        margin-bottom: 30px
+    &_button
+        font-family: borsok
+        font-size: 20px
+        color: $accentTextOnButton
+        background-color: $button
+        border-radius: 20px
+        width: 293px
+        height: 54px
+        box-shadow: 0px 19px 18px 7px rgba(232, 64, 252, 0.19)
+
+.footer
+    background-color: $text
+    height: 500px
+    display: flex
+    align-items: center
+    &_container
+        display: flex
+        flex-wrap: wrap
+        gap: 80px
+        padding-right: 90px
+
+.info
+    display: flex
+    flex-direction: column
+    &_title
+        font-family: monSB
+        font-size: 28px
+        color: $accentText
+        margin-bottom: 10px
+    &_text
+        font-family: monR
+        font-size: 28px
+        color: $accentText
+    &_social_img
+        margin-right: 20px
+
+.slider
+    &_container
+        position: relative
+        max-width: 80%
+        margin: 0 auto
+        overflow: hidden
+
+.sliderCat
+    &_container
+        position: relative
+        max-width: 80%
+        margin: 0 auto
+        overflow: hidden
+.slides
+    display: flex
+    & img
+        max-width: 100%
+        display: block
+        border-radius: 40px
+.slidesCat
+    display: flex
+    & img
+        max-width: 100%
+        display: block
+        border-radius: 40px
+
+.prev
+    position: absolute
+    top: 50%
+    left: 10px
+    transform: translateY(-50%)
+    border-radius: 500px
+    z-index: 1
+
+.next
+    position: absolute
+    top: 50%
+    right: 10px
+    transform: translateY(-50%)
+    border-radius: 500px
+    z-index: 1
+
+
+
+
+@media screen and (min-width: 1301px) and (max-width: 1440px)
+    .menuBurger
+        display: none
+    .hidden
+        display: none
+    .info
+        &_text
+            font-size: 24px
+    .list
+        &_items
+            height: 60px
+
+@media screen and (min-width: 1101px) and (max-width: 1300px)
+    .menuBurger
+        display: none
+    .main
+        &__cats
+            padding-top: 250px
+        &__we
+            background-color: $button
+        &__slider
+            padding-top: 100px
+            background-color: $button
+            margin-bottom: 100px
+
+    .about
+        &_container
+            padding-left: 100px
+            padding-right: 40px
+        &_title
+            padding-top: 270px
+            font-size: 110px
+            margin-bottom: 50px
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        // max-width: 1150px
+        &_items
+            height: 60px
+            display: block
+            background-size: 60px 60px
+            padding-left: 55px
+            font-size: 20px
+
+    .come
+        &_title
+            padding-top: 40px
+            font-family: borsok
+            font-size: 96px
+            color: $text
+            margin-bottom: 30px
+        &_term
+            font-size: 20px
+            color: $accentText
+            padding-top: 30px
+            padding-bottom: 30px
+            padding-left: 147px
+            padding-right: 147px
+            border: 1px solid $text
+            border-radius: 40px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -240px
+            width: 100%
+
+    .we
+        &_title
+            font-size: 113px
+            padding-left: 80px
+            margin-bottom: 30px
+        &_group
+            display: flex
+            justify-content: center
+            gap: 20px
+
+    .slider
+        &_container
+            position: relative
+            max-width: 90%
+
+
+
+    .info
+        &_title
+            font-size: 24px
+        &_text
+            font-size: 20px
+        &_social_img
+            width: 30px
+            margin-right: 10px
+
+@media screen and (min-width: 901px) and (max-width: 1100px)
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 180px
+        &__we
+            background-color: $button
+        &__slider
+            padding-top: 100px
+            background-color: $button
+            margin-bottom: 100px
+    .header
+        height: 70px
+    .menu
+        gap: 40px
+        &_item
+            font-size: 18px
+    .menuBurger
+        display: none
+    .about
+        height: 700px
+        &_container
+            padding-left: 40px
+            padding-right: 40px
+        &_title
+            padding-top: 260px
+            font-size: 110px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 50px
+            display: block
+            background-size: 60px 60px
+            padding-left: 55px
+            font-size: 16px
+
+    .come
+        &_title
+            padding-top: 40px
+            font-size: 80px
+            color: $text
+            margin-bottom: 30px
+        &_term
+            font-size: 18px
+            color: $accentText
+            padding-top: 30px
+            padding-bottom: 30px
+            padding-left: 110px
+            padding-right: 110px
+            border: 1px solid $text
+            border-radius: 40px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -196px
+            width: 100%
+
+
+    .hidden
+        display: none
+    .cats
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_title
+            margin-bottom: 10px
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 40px
+            margin-bottom: 10px
+        &_info
+            font-family: borsok
+            font-size: 24px
+            color: $text
+    .success_button
+        width: 350px
+        height: 70px
+        font-size: 28px
+
+
+    .we
+        &_title
+            padding-left: 70px
+
+    .weGroup
+        width: 28%
+        height: 400px
+        &_title
+            padding-top: 40px
+            font-size: 18px
+            margin-bottom: 40px
+            width: 80%
+            height: 110px
+        &_img
+            height: 120px
+            margin-bottom: 30px
+        &_button
+            font-family: borsok
+            font-size: 16px
+            color: $accentTextOnButton
+            background-color: $button
+            border-radius: 20px
+            width: 88%
+            height: 54px
+            box-shadow: 0px 19px 18px 7px rgba(232, 64, 252, 0.19)
+
+    .slider
+        &_container
+            position: relative
+            max-width: 90%
+
+    .footer
+        height: 300px
+        &_img
+            max-width: 30%
+        &_container
+            gap: 50px
+            padding-right: 20px
+    .info
+        &_title
+            font-size: 20px
+        &_text
+            font-size: 16px
+        &_social_img
+            width: 30px
+            margin-right: 10px
+@media screen and (min-width: 777px) and (max-width: 900px)
+    .menu
+        display: none
+    .menuBurger
+        position: absolute
+        top: -500px
+        z-index: 30
+        display: flex
+        flex-direction: column
+        background-color: rgba(255, 255, 255, .9)
+        width: 100%
+        transition: .8s
+        &_item
+            // align-items: center
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            font-family: borsok
+            font-size: 20px
+            color: $text
+            transition: .3s
+            &:hover
+                transition: .3s
+                text-shadow: 0px 0px 26px $accentButton
+                color: $button
+    .show
+        top: 40px
+        transition: .8s
+    .search
+        display: flex
+        align-items: center
+        border-radius: 100px
+        width: 80%
+        height: 100%
+        background-color: $text
+        padding-left: 35px
+        border: 1px solid $accentButton
+        background-image: url(../icons/search.svg)
+        background-position: 10px 6px
+        background-repeat: no-repeat
+        font-family: monSB
+        
+    .primaryScreen
+        height: 370px
+        align-items: center
+        background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+        background-repeat: no-repeat
+        background-size: 260px, 180px, 553px
+        background-position: -100px 45px, 180px -53px, 388px -150px
+        &_logo
+            width: 80%
+            padding-top: 50px
+        &_drops
+            bottom: -88px
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 180px
+        &__we
+            padding-top: 100px
+            background-color: $button
+            // margin-bottom: 50px
+        &__slider
+            padding-top: 100px
+            background-color: $button
+            margin-bottom: 100px
+        &__sliderCat
+            padding-top: 100px
+            background-color: $button
+            // margin-bottom: 100px
+
+    .header
+        padding-top: 10px
+        height: 40px
+        background-color: rgba(255, 255, 255, 0.1)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-bottom: 0
+        
+    .about
+        height: 600px
+        &_container
+            padding-left: 40px
+            padding-right: 40px
+        &_title
+            padding-top: 190px
+            font-size: 80px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 40px
+            display: block
+            background-size: 60px 60px
+            padding-left: 55px
+            font-size: 14px
+
+    .come
+        &_title
+            padding-top: 40px
+            font-size: 56px
+            color: $text
+            margin-bottom: 30px
+        &_term
+            font-size: 14px
+            color: $accentText
+            padding-top: 30px
+            padding-bottom: 30px
+            padding-left: 90px
+            padding-right: 90px
+            border: 1px solid $text
+            border-radius: 40px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -160px
+            width: 100%
+
+    .hidden
+        display: none
+    .cats
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_title
+            padding-left: 30px
+            font-size: 56px
+            margin-bottom: 10px
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 30px
+            margin-bottom: 10px
+        &_info
+            font-size: 20px
+
+    .success_button
+        width: 300px
+        height: 70px
+        font-size: 24px
+
+
+    .we
+        &_title
+            padding-left: 50px
+        &_group
+            gap: 15px
+
+    .weGroup
+        width: 28%
+        height: 320px
+        &_title
+            padding-top: 20px
+            font-size: 14px
+            margin-bottom: 20px
+            width: 80%
+            height: 100px
+        &_img
+            height: 100px
+            margin-bottom: 30px
+        &_button
+            font-size: 14px
+            border-radius: 20px
+            width: 88%
+            height: 45px
+
+    .prev
+        & img
+            width: 50px
+    .next
+        & img
+            width: 50px
+    .slider
+        &_container
+            position: relative
+            max-width: 90%
+    .sliderCat
+        &_container
+            position: relative
+            max-width: 90%
+    .slides
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .slidesCat
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .left
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+
+    .right
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+
+    .footer
+        height: 300px
+        &_img
+            max-width: 30%
+        &_container
+            gap: 50px
+            padding-right: 20px
+    .info
+        &_title
+            font-size: 16px
+        &_text
+            font-size: 12px
+        &_social_img
+            width: 25px
+            margin-right: 10px
+
+@media screen and (min-width: 680px) and (max-width: 776px)
+    .menu
+        display: none
+
+    .menuBurger
+        position: absolute
+        top: -500px
+        z-index: 30
+        display: flex
+        flex-direction: column
+        background-color: rgba(255, 255, 255, .9)
+        width: 100%
+        transition: .8s
+        &_item
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            font-family: borsok
+            font-size: 20px
+            color: $text
+            transition: .3s
+            &:hover
+                transition: .3s
+                text-shadow: 0px 0px 26px $accentButton
+                color: $button
+    .show
+        top: 40px
+        transition: .8s
+
+
+    .search
+        display: flex
+        align-items: center
+        border-radius: 100px
+        width: 80%
+        height: 100%
+        background-color: $text
+        padding-left: 35px
+        border: 1px solid $accentButton
+        background-image: url(../icons/search.svg)
+        background-position: 10px 6px
+        background-repeat: no-repeat
+        font-family: monSB
+        
+    .primaryScreen
+        height: 330px
+        align-items: center
+        background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+        background-repeat: no-repeat
+        background-size: 260px, 180px, 553px
+        background-position: -100px 45px, 180px -53px, 388px -150px
+        &_logo
+            width: 80%
+            padding-top: 50px
+        &_drops
+            bottom: -80px
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 180px
+        &__we
+            background-color: $button
+            padding-top: 100px
+            // margin-bottom: 50px
+        &__slider
+            padding-top: 100px
+            background-color: $button
+            margin-bottom: 100px
+        &__sliderCat
+            padding-top: 140px
+            background-color: $button
+            // margin-bottom: 100px
+
+    .header
+        padding-top: 10px
+        height: 40px
+        background-color: rgba(255, 255, 255, 0.1)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-bottom: 0
+    .menu
+        gap: 40px
+        &_item
+            font-size: 18px
+        
+    .about
+        height: 600px
+        &_container
+            padding-left: 40px
+            padding-right: 40px
+        &_title
+            padding-top: 150px
+            font-size: 80px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 40px
+            display: block
+            background-size: 60px 60px
+            padding-left: 55px
+            font-size: 14px
+
+    .come
+        &_title
+            padding-top: 40px
+            font-size: 56px
+            color: $text
+            margin-bottom: 30px
+        &_term
+            font-size: 14px
+            color: $accentText
+            padding-top: 30px
+            padding-bottom: 30px
+            padding-left: 90px
+            padding-right: 90px
+            border: 1px solid $text
+            border-radius: 40px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -140px
+            width: 100%
+
+    .hidden
+        display: none
+    .cats
+        display: none
+        flex-direction: column
+        align-items: center
+        &_title
+            font-size: 46px
+            margin-bottom: 10px
+            padding-left: 30px
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 30px
+            margin-bottom: 10px
+        &_info
+            font-size: 20px
+
+    .success_button
+        width: 300px
+        height: 70px
+        font-size: 24px
+
+
+    .we
+        &_title
+            font-size: 52px
+            padding-left: 50px
+        &_group
+            gap: 15px
+
+    .weGroup
+        width: 28%
+        height: 320px
+        &_title
+            padding-top: 20px
+            font-size: 14px
+            margin-bottom: 20px
+            width: 80%
+            height: 100px
+        &_img
+            height: 100px
+            margin-bottom: 30px
+        &_button
+            font-size: 14px
+            border-radius: 20px
+            width: 88%
+            height: 45px
+
+    .prev
+        & img
+            width: 50px
+    .next
+        & img
+            width: 50px
+    .slider
+        // display: none
+        &_container
+            position: relative
+            max-width: 90%
+    .sliderCat
+        &_container
+            position: relative
+            max-width: 90%
+    .slides
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .slidesCat
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .left
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+
+    .right
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+
+    .footer
+        height: 300px
+        &_img
+            max-width: 30%
+        &_container
+            gap: 50px
+            padding-right: 20px
+    .info
+        &_title
+            font-size: 16px
+        &_text
+            font-size: 12px
+        &_social_img
+            width: 25px
+            margin-right: 10px
+
+@media screen and (min-width: 601px) and (max-width: 679px)
+    .menu
+        display: none
+
+    .menuBurger
+        position: absolute
+        top: -500px
+        z-index: 30
+        display: flex
+        flex-direction: column
+        background-color: rgba(255, 255, 255, .9)
+        width: 100%
+        transition: .8s
+        &_item
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            font-family: borsok
+            font-size: 20px
+            color: $text
+            transition: .3s
+            &:hover
+                transition: .3s
+                text-shadow: 0px 0px 26px $accentButton
+                color: $button
+    .show
+        top: 40px
+        transition: .8s
+
+    .search
+        display: flex
+        align-items: center
+        border-radius: 100px
+        width: 80%
+        height: 100%
+        background-color: $text
+        padding-left: 35px
+        border: 1px solid $accentButton
+        background-image: url(../icons/search.svg)
+        background-position: 10px 6px
+        background-repeat: no-repeat
+        font-family: monSB
+        
+    .primaryScreen
+        height: 300px
+        align-items: center
+        background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+        background-repeat: no-repeat
+        background-size: 260px, 180px, 553px
+        background-position: -100px 45px, 180px -53px, 388px -150px
+        &_logo
+            width: 80%
+            padding-top: 50px
+        &_drops
+            bottom: -75px
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 180px
+        &__we
+            padding-top: 100px
+            background-color: $button
+        &__slider
+            padding-top: 100px
+            background-color: $button
+            margin-bottom: 100px
+        &__sliderCat
+            padding-top: 140px
+            background-color: $button
+            // margin-bottom: 100px
+
+    .header
+        padding-top: 10px
+        height: 40px
+        background-color: rgba(255, 255, 255, 0.1)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-bottom: 0
+    .menu
+        gap: 40px
+        &_item
+            font-size: 18px
+        
+    .about
+        height: 600px
+        &_container
+            padding-left: 40px
+            padding-right: 40px
+        &_title
+            padding-top: 150px
+            font-size: 80px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 40px
+            display: block
+            background-size: 60px 60px
+            padding-left: 55px
+            font-size: 14px
+
+    .come
+        &_title
+            padding-top: 40px
+            font-size: 56px
+            color: $text
+            margin-bottom: 30px
+        &_term
+            font-size: 14px
+            color: $accentText
+            padding-top: 30px
+            padding-bottom: 30px
+            padding-left: 90px
+            padding-right: 90px
+            border: 1px solid $text
+            border-radius: 40px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -130px
+            width: 100%
+
+    .hidden
+        display: none
+    .cats
+        display: none
+        &_title
+            padding-left: 30px
+            font-size: 56px
+            margin-bottom: 10px
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 30px
+            margin-bottom: 10px
+        &_info
+            font-size: 20px
+
+    .success_button
+        width: 300px
+        height: 70px
+        font-size: 24px
+
+
+    .we
+        &_title
+            padding-left: 50px
+        &_group
+            gap: 15px
+            // margin-bottom: 50px
+
+    .weGroup
+        width: 28%
+        height: 320px
+        &_title
+            padding-top: 20px
+            font-size: 14px
+            margin-bottom: 20px
+            width: 80%
+            height: 100px
+        &_img
+            height: 100px
+            margin-bottom: 30px
+        &_button
+            font-size: 14px
+            border-radius: 20px
+            width: 88%
+            height: 45px
+
+    .prev
+        & img
+            width: 50px
+    .next
+        & img
+            width: 50px
+    .slider
+        // display: none
+        &_container
+            position: relative
+            max-width: 90%
+    .sliderCat
+        &_container
+            position: relative
+            max-width: 90%
+    .slides
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .slidesCat
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .left
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+
+    .right
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+
+    .footer
+        height: 300px
+        &_img
+            max-width: 30%
+        &_container
+            gap: 50px
+            padding-right: 20px
+    .info
+        &_title
+            font-size: 16px
+        &_text
+            font-size: 12px
+        &_social_img
+            width: 25px
+            margin-right: 10px
+
+
+@media screen and (min-width: 563px) and (max-width: 600px)
+    .menu
+        display: none
+
+    .menuBurger
+        position: absolute
+        top: -500px
+        z-index: 30
+        display: flex
+        flex-direction: column
+        background-color: rgba(255, 255, 255, .9)
+        width: 100%
+        transition: .8s
+        &_item
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            font-family: borsok
+            font-size: 20px
+            color: $text
+            transition: .3s
+            &:hover
+                transition: .3s
+                text-shadow: 0px 0px 26px $accentButton
+                color: $button
+    .show
+        top: 40px
+        transition: .8s
+
+    .search
+        display: flex
+        align-items: center
+        border-radius: 100px
+        width: 80%
+        height: 100%
+        background-color: $text
+        padding-left: 35px
+        border: 1px solid $accentButton
+        background-image: url(../icons/search.svg)
+        background-position: 10px 6px
+        background-repeat: no-repeat
+        font-family: monSB
+        
+    .primaryScreen
+        height: 210px
+        align-items: center
+        background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+        background-repeat: no-repeat
+        background-size: 100px, 80px, 253px
+        background-position: -50px 25px, 180px -33px, 488px -50px
+        &_logo
+            width: 90%
+            padding-top: 20px
+        &_drops
+            bottom: -10px
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 100px
+        &__we
+            background-color: $button
+        &__slider
+            padding-top: 100px
+            background-color: $button
+            margin-bottom: 100px
+        &__sliderCat
+            padding-top: 120px
+            background-color: $button
+            padding-bottom: 50px
+
+    .header
+        padding-top: 10px
+        height: 40px
+        background-color: rgba(255, 255, 255, 0.1)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-bottom: 0
+    .menu
+        gap: 40px
+        &_item
+            font-size: 18px
+        
+    .about
+        height: 600px
+        &_container
+            padding-left: 10px
+            padding-right: 40px
+        &_title
+            padding-top: 150px
+            font-size: 46px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 80px
+            display: block
+            background-size: 50px 50px
+            padding-left: 45px
+            padding-right: 45px
+            font-size: 12px
+
+    .come
+        &_title
+            padding-top: 30px
+            font-size: 24px
+            margin-bottom: 20px
+        &_term
+            font-size: 12px
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 30px
+            padding-right: 30px
+            border: 1px solid $text
+            border-radius: 20px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -110px
+            width: 100%
+
+    .hidden
+        display: none
+    .cats
+        display: none
+        flex-direction: column
+        align-items: center
+        &_title
+            padding-left: 30px
+            font-size: 42px
+            margin-bottom: 10px 
+        &_img
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 30px
+            margin-bottom: 10px
+        &_info
+            font-size: 20px
+
+    .success_button
+        width: 300px
+        height: 70px
+        font-size: 24px
+
+
+    .we
+        &_title
+            font-size: 42px
+            padding-left: 32px
+            margin-bottom: 10px
+        &_group
+            align-items: center
+            flex-direction: column
+            gap: 15px
+            // margin-bottom: 20px
+
+    .weGroup
+        width: 88%
+        height: 260px
+        &_title
+            padding-top: 20px
+            font-size: 14px
+            margin-bottom: 0px
+            width: 80%
+            height: 80px
+        &_img
+            height: 95px
+            margin-bottom: 30px
+        &_button
+            font-size: 14px
+            border-radius: 20px
+            width: 88%
+            height: 45px
+
+    .left
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+    .right
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+
+    .slider
+        // display: none
+        &_container
+            position: relative
+            max-width: 90%
+    .prev
+        & img
+            width: 50px
+    .next
+        & img
+            width: 50px
+    .sliderCat
+        &_container
+            position: relative
+            max-width: 90%
+    .slides
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .slidesCat
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .footer
+        height: 230px
+        &_img
+            max-width: 25%
+        &_container
+            gap: 10px
+            padding-right: 10px
+    .info
+        &_title
+            margin-bottom: 0px
+            font-size: 14px
+        &_text
+            font-size: 10px
+        &_social_img
+            width: 20px
+            margin-right: 10px
+
+@media screen and (min-width: 449px) and (max-width: 562px)
+    .menu
+        display: none
+
+    .menuBurger
+        position: absolute
+        top: -500px
+        z-index: 30
+        display: flex
+        flex-direction: column
+        background-color: rgba(255, 255, 255, .9)
+        width: 100%
+        transition: .8s
+        &_item
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            font-family: borsok
+            font-size: 20px
+            color: $text
+            transition: .3s
+            &:hover
+                transition: .3s
+                text-shadow: 0px 0px 26px $accentButton
+                color: $button
+    .show
+        top: 40px
+        transition: .8s
+
+    .search
+        display: flex
+        align-items: center
+        border-radius: 100px
+        width: 80%
+        height: 100%
+        background-color: $text
+        padding-left: 35px
+        border: 1px solid $accentButton
+        background-image: url(../icons/search.svg)
+        background-position: 10px 6px
+        background-repeat: no-repeat
+        font-family: monSB
+        
+    .primaryScreen
+        height: 180px
+        align-items: center
+        background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+        background-repeat: no-repeat
+        background-size: 100px, 80px, 253px
+        background-position: -50px 25px, 180px -33px, 488px -50px
+        &_logo
+            width: 90%
+            padding-top: 20px
+        &_drops
+            bottom: 1px
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 100px
+        &__we
+            background-color: $button
+        &__slider
+            padding-top: 100px
+            background-color: $button
+            margin-bottom: 100px
+        &__sliderCat
+            padding-top: 100px
+            background-color: $button
+            padding-bottom: 50px
+
+    .header
+        padding-top: 10px
+        height: 40px
+        background-color: rgba(255, 255, 255, 0.1)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-bottom: 0
+    .menu
+        gap: 40px
+        &_item
+            font-size: 18px
+        
+    .about
+        height: 600px
+        &_container
+            padding-left: 10px
+            padding-right: 10px
+        &_title
+            padding-top: 130px
+            font-size: 46px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 80px
+            display: block
+            background-size: 50px 50px
+            padding-left: 45px
+            padding-right: 45px
+            font-size: 12px
+
+    .come
+        &_title
+            padding-top: 30px
+            font-size: 24px
+            margin-bottom: 20px
+        &_term
+            font-size: 12px
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 30px
+            padding-right: 30px
+            border: 1px solid $text
+            border-radius: 20px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -98px
+            width: 100%
+
+    .hidden
+        display: none
+    .cats
+        display: none
+        flex-direction: column
+        align-items: center
+        &_title
+            padding-left: 30px
+            font-size: 42px
+            margin-bottom: 10px
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 30px
+            margin-bottom: 10px
+        &_info
+            font-size: 20px
+
+    .success_button
+        width: 300px
+        height: 70px
+        font-size: 24px
+
+
+    .we
+        &_title
+            font-size: 42px
+            padding-left: 32px
+            margin-bottom: 10px
+        &_group
+            align-items: center
+            flex-direction: column
+            gap: 15px
+            // margin-bottom: 20px
+
+    .weGroup
+        width: 88%
+        height: 260px
+        &_title
+            padding-top: 20px
+            font-size: 14px
+            margin-bottom: 0px
+            width: 80%
+            height: 80px
+        &_img
+            height: 95px
+            margin-bottom: 30px
+        &_button
+            font-size: 14px
+            border-radius: 20px
+            width: 88%
+            height: 45px
+
+    .left
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+    .right
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+
+    .slider
+        // display: none
+        &_container
+            position: relative
+            max-width: 90%
+    .prev
+        & img
+            width: 50px
+    .next
+        & img
+            width: 50px
+    .sliderCat
+        &_container
+            position: relative
+            max-width: 90%
+    .slides
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .slidesCat
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .footer
+        height: 230px
+        &_img
+            max-width: 25%
+        &_container
+            gap: 10px
+            padding-right: 10px
+    .info
+        &_title
+            margin-bottom: 0px
+            font-size: 14px
+        &_text
+            font-size: 10px
+        &_social_img
+            width: 20px
+            margin-right: 10px
+
+
+@media screen and (min-width: 398px) and (max-width: 449px)
+    .menu
+        display: none
+
+    .menuBurger
+        position: absolute
+        top: -500px
+        z-index: 30
+        display: flex
+        flex-direction: column
+        background-color: rgba(255, 255, 255, .9)
+        width: 100%
+        transition: .8s
+        &_item
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            font-family: borsok
+            font-size: 20px
+            color: $text
+            transition: .3s
+            &:hover
+                transition: .3s
+                text-shadow: 0px 0px 26px $accentButton
+                color: $button
+    .show
+        top: 40px
+        transition: .8s
+
+    .search
+        display: flex
+        align-items: center
+        border-radius: 100px
+        width: 80%
+        height: 100%
+        background-color: $text
+        padding-left: 35px
+        border: 1px solid $accentButton
+        background-image: url(../icons/search.svg)
+        background-position: 10px 6px
+        background-repeat: no-repeat
+        font-family: monSB
+        
+    .primaryScreen
+        height: 180px
+        align-items: center
+        background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+        background-repeat: no-repeat
+        background-size: 100px, 80px, 253px
+        background-position: -50px 25px, 180px -33px, 488px -50px
+        &_logo
+            width: 90%
+            padding-top: 20px
+        &_drops
+            bottom: -30px
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 100px
+        &__we
+            background-color: $button
+        &__slider
+            padding-top: 100px
+            background-color: $button
+            margin-bottom: 100px
+        &__sliderCat
+            padding-top: 100px
+            background-color: $button
+            padding-bottom: 50px
+
+    .header
+        padding-top: 10px
+        height: 40px
+        background-color: rgba(255, 255, 255, 0.1)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-bottom: 0
+    .menu
+        gap: 40px
+        &_item
+            font-size: 18px
+        
+    .about
+        height: 600px
+        &_container
+            padding-left: 10px
+            padding-right: 10px
+        &_title
+            padding-top: 80px
+            font-size: 46px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 80px
+            display: block
+            background-size: 50px 50px
+            padding-left: 45px
+            padding-right: 45px
+            font-size: 12px
+
+    .come
+        &_title
+            padding-top: 30px
+            font-size: 24px
+            margin-bottom: 20px
+        &_term
+            font-size: 12px
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 30px
+            padding-right: 30px
+            border: 1px solid $text
+            border-radius: 20px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -80px
+            width: 100%
+
+    .hidden
+        display: none
+    .cats
+        display: none
+        flex-direction: column
+        align-items: center
+        &_title
+            padding-left: 30px
+            font-size: 42px
+            margin-bottom: 10px
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 30px
+            margin-bottom: 10px
+        &_info
+            font-size: 20px
+
+    .success_button
+        width: 300px
+        height: 70px
+        font-size: 24px
+
+
+    .we
+        &_title
+            font-size: 42px
+            padding-left: 32px
+            margin-bottom: 10px
+        &_group
+            align-items: center
+            flex-direction: column
+            gap: 15px
+            // margin-bottom: 20px
+
+    .weGroup
+        width: 88%
+        height: 260px
+        &_title
+            padding-top: 20px
+            font-size: 14px
+            margin-bottom: 0px
+            width: 80%
+            height: 80px
+        &_img
+            height: 95px
+            margin-bottom: 30px
+        &_button
+            font-size: 14px
+            border-radius: 20px
+            width: 88%
+            height: 45px
+
+    .left
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+    .right
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+
+    .slider
+        // display: none
+        &_container
+            position: relative
+            max-width: 90%
+    .prev
+        & img
+            width: 50px
+    .next
+        & img
+            width: 50px
+    .sliderCat
+        &_container
+            position: relative
+            max-width: 90%
+    .slides
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .slidesCat
+        display: flex
+        & img
+            width: 100%
+            display: block
+            border-radius: 40px
+    .footer
+        height: 230px
+        &_img
+            max-width: 25%
+        &_container
+            gap: 10px
+            padding-right: 10px
+    .info
+        &_title
+            margin-bottom: 0px
+            font-size: 14px
+        &_text
+            font-size: 10px
+        &_social_img
+            width: 20px
+            margin-right: 10px
+
+
+
+@media screen and (min-width: 364px) and (max-width: 398px)
+    .menu
+        display: none
+
+    .menuBurger
+        position: absolute
+        top: -500px
+        z-index: 30
+        display: flex
+        flex-direction: column
+        background-color: rgba(255, 255, 255, .9)
+        width: 100%
+        transition: .8s
+        &_item
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            font-family: borsok
+            font-size: 20px
+            color: $text
+            transition: .3s
+            &:hover
+                transition: .3s
+                text-shadow: 0px 0px 26px $accentButton
+                color: $button
+    .show
+        top: 40px
+        transition: .8s
+
+    .search
+        display: flex
+        align-items: center
+        border-radius: 100px
+        width: 80%
+        height: 100%
+        background-color: $text
+        padding-left: 35px
+        border: 1px solid $accentButton
+        background-image: url(../icons/search.svg)
+        background-position: 10px 6px
+        background-repeat: no-repeat
+        font-family: monSB
+        
+    .primaryScreen
+        height: 130px
+        align-items: center
+        background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+        background-repeat: no-repeat
+        background-size: 100px, 80px, 253px
+        background-position: -50px 25px, 180px -33px, 488px -50px
+        &_logo
+            width: 90%
+            padding-top: 20px
+        &_drops
+            bottom: 5px
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 100px
+        &__we
+            background-color: $button
+        &__slider
+            padding-top: 60px
+            background-color: $button
+            margin-bottom: 60px
+        &__sliderCat
+            padding-top: 100px
+            background-color: $button
+            padding-bottom: 50px
+
+    .header
+        padding-top: 10px
+        height: 40px
+        background-color: rgba(255, 255, 255, 0.1)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-bottom: 0
+    .menu
+        gap: 40px
+        &_item
+            font-size: 18px
+        
+    .about
+        height: 600px
+        &_container
+            padding-left: 10px
+            padding-right: 10px
+        &_title
+            padding-top: 80px
+            font-size: 46px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 80px
+            display: block
+            background-size: 50px 50px
+            padding-left: 45px
+            padding-right: 45px
+            font-size: 12px
+
+    .come
+        &_title
+            padding-top: 30px
+            font-size: 24px
+            margin-bottom: 20px
+        &_term
+            font-size: 12px
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 30px
+            padding-right: 30px
+            border: 1px solid $text
+            border-radius: 20px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -75px
+            width: 100%
+
+    .hidden
+        display: none
+    .cats
+        display: none
+        flex-direction: column
+        align-items: center
+        &_title
+            padding-left: 30px
+            font-size: 42px
+            margin-bottom: 10px
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 30px
+            margin-bottom: 10px
+        &_info
+            font-size: 20px
+
+    .success_button
+        width: 300px
+        height: 70px
+        font-size: 24px
+
+
+    .we
+        &_title
+            font-size: 42px
+            padding-left: 32px
+            margin-bottom: 10px
+        &_group
+            align-items: center
+            flex-direction: column
+            gap: 15px
+            // margin-bottom: 20px
+
+    .weGroup
+        width: 88%
+        height: 260px
+        &_title
+            padding-top: 20px
+            font-size: 14px
+            margin-bottom: 0px
+            width: 80%
+            height: 80px
+        &_img
+            height: 95px
+            margin-bottom: 30px
+        &_button
+            font-size: 14px
+            border-radius: 20px
+            width: 88%
+            height: 45px
+
+    .left
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+    .right
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+
+    .slider
+        // display: none
+        &_container
+            position: relative
+            max-width: 90%
+    .prev
+        & img
+            width: 50px
+    .next
+        & img
+            width: 50px
+    .sliderCat
+        &_container
+            position: relative
+            max-width: 90%
+    .slides
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .slidesCat
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .footer
+        height: 230px
+        &_img
+            max-width: 25%
+        &_container
+            gap: 10px
+            padding-right: 10px
+    .info
+        &_title
+            margin-bottom: 0px
+            font-size: 14px
+        &_text
+            font-size: 10px
+        &_social_img
+            width: 20px
+            margin-right: 10px
+
+
+@media screen and (min-width: 330px) and (max-width: 364px)
+    .menu
+        display: none
+
+    .menuBurger
+        position: absolute
+        top: -500px
+        z-index: 30
+        display: flex
+        flex-direction: column
+        background-color: rgba(255, 255, 255, .9)
+        width: 100%
+        transition: .8s
+        &_item
+            margin: 0 auto
+            margin-top: 10px
+            margin-bottom: 10px
+            font-family: borsok
+            font-size: 20px
+            color: $text
+            transition: .3s
+            &:hover
+                transition: .3s
+                text-shadow: 0px 0px 26px $accentButton
+                color: $button
+    .show
+        top: 40px
+        transition: .8s
+    .search
+        display: flex
+        align-items: center
+        border-radius: 100px
+        width: 80%
+        height: 100%
+        background-color: $text
+        padding-left: 35px
+        border: 1px solid $accentButton
+        background-image: url(../icons/search.svg)
+        background-position: 10px 6px
+        background-repeat: no-repeat
+        font-family: monSB
+        
+    .primaryScreen
+        height: 130px
+        align-items: center
+        background-image: url(../img/blurCat.png), url(../img/blurCat.png), url(../img/blurCat.png)
+        background-repeat: no-repeat
+        background-size: 100px, 80px, 253px
+        background-position: -50px 25px, 180px -33px, 488px -50px
+        &_logo
+            width: 90%
+            padding-top: 20px
+        &_drops
+            bottom: -5px
+    .main
+        background-color: $text
+        &__cats
+            background-color: $button
+            padding-top: 100px
+        &__we
+            background-color: $button
+        &__slider
+            padding-top: 60px
+            background-color: $button
+            margin-bottom: 60px
+        &__sliderCat
+            padding-top: 100px
+            background-color: $button
+            padding-bottom: 50px
+
+    .header
+        padding-top: 10px
+        height: 40px
+        background-color: rgba(255, 255, 255, 0.1)
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-bottom: 0
+    .menu
+        gap: 40px
+        &_item
+            font-size: 18px
+        
+    .about
+        height: 600px
+        &_container
+            padding-left: 10px
+            padding-right: 10px
+        &_title
+            padding-top: 80px
+            font-size: 46px
+            margin-bottom: 30px
+
+    .list
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &_items
+            height: 80px
+            display: block
+            background-size: 50px 50px
+            padding-left: 45px
+            padding-right: 45px
+            font-size: 12px
+
+    .come
+        &_title
+            padding-top: 30px
+            font-size: 24px
+            margin-bottom: 20px
+        &_term
+            font-size: 12px
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 30px
+            padding-right: 30px
+            border: 1px solid $text
+            border-radius: 20px
+            margin: 0 auto
+            margin-bottom: 10px
+        &_drops
+            position: relative
+            bottom: -70px
+            width: 100%
+
+    .hidden
+        display: none
+    .cats
+        display: none
+        flex-direction: column
+        align-items: center
+        &_title
+            padding-left: 30px
+            font-size: 42px
+            margin-bottom: 10px
+    .cat
+        max-width: 28%
+        margin-bottom: 30px
+        &_container
+            justify-content: center
+        &_img
+            width: 100%
+            border-radius: 30px
+            margin-bottom: 10px
+        &_info
+            font-size: 20px
+
+    .success_button
+        width: 300px
+        height: 70px
+        font-size: 24px
+
+
+    .we
+        &_title
+            font-size: 42px
+            padding-left: 32px
+            margin-bottom: 10px
+        &_group
+            align-items: center
+            flex-direction: column
+            gap: 15px
+            // margin-bottom: 20px
+
+    .weGroup
+        width: 88%
+        height: 260px
+        &_title
+            padding-top: 20px
+            font-size: 14px
+            margin-bottom: 0px
+            width: 80%
+            height: 80px
+        &_img
+            height: 80px
+            margin-bottom: 30px
+        &_button
+            font-size: 14px
+            border-radius: 20px
+            width: 88%
+            height: 45px
+
+    .left
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+    .right
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        border-radius: 500px
+        z-index: 1
+        & img
+            width: 40px
+
+
+    .slider
+        // display: none
+        &_container
+            position: relative
+            max-width: 90%
+    .prev
+        & img
+            width: 50px
+    .next
+        & img
+            width: 50px
+    .sliderCat
+        &_container
+            position: relative
+            max-width: 90%
+    .slides
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .slidesCat
+        display: flex
+        & img
+            max-width: 100%
+            display: block
+            border-radius: 40px
+    .footer
+        height: 230px
+        &_img
+            max-width: 25%
+        &_container
+            gap: 10px
+            padding-right: 10px
+    .info
+        &_title
+            margin-bottom: 0px
+            font-size: 14px
+        &_text
+            font-size: 10px
+        &_social_img
+            width: 20px
+            margin-right: 10px
+
